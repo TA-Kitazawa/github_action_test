@@ -16,7 +16,7 @@ jobs:
       contents: write
       pull-requests: write
 
-    if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'release')
+    if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'staging')
 
     runs-on: ubuntu-latest
     steps:
